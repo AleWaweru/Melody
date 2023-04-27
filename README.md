@@ -58,9 +58,9 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
+>this is a video explaining my project process
 
-- N/A
+https://www.loom.com/share/be789bfa9e65427d94d24516bdbeb071
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
