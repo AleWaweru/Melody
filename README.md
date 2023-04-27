@@ -137,7 +137,7 @@ Example command:
 ### Deployment
 
 You can deploy this project using:
-https://alewaweru.github.io/My-Portfolio/
+https://alewaweru.github.io/Melody/home.html
 
 Example:
 
