@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,600;1,700;1,900&display=swap");
+/* /* @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,600;1,700;1,900&display=swap");
 
 /* font-family: 'Source Sans Pro', sans-serif; */
 * {
@@ -8,26 +8,15 @@
 }
 
 body {
-  width: 375px;
+  width: 368px;
+  background: none;
 }
 
 .header {
   width: 100%;
 }
 
-.navbar {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  height: 5px;
-}
-
-.navbar ul {
-  display: flex;
-  gap: 4rem;
-}
-
-.navbar ul li {
+.menuList li {
   list-style: none;
 }
 
@@ -38,22 +27,13 @@ body {
   margin-right: 10rem;
 }
 
-.navbar ul li a {
+.menuList li a {
   text-decoration: none;
-}
-
-.logo {
-  justify-content: center;
-  margin-top: 12px;
 }
 
 .humburger {
   margin-top: 12px;
   margin-left: 15px;
-}
-
-#humburger {
-  font-size: 30px;
 }
 
 .intro-header h1 {
@@ -99,13 +79,13 @@ body {
 
 .intro-text2 {
   margin-top: 30px;
-  margin-left: 18px;
+  margin-left: 16px;
   margin-right: 68px;
   width: 100%;
   font-family: 'lato', sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
   align-items: center;
   color: #595959;
@@ -136,11 +116,12 @@ body {
   align-items: center;
   letter-spacing: -0.04em;
   color: #fff;
+  margin-right: 150px;
 }
 
 .main-border {
-  width: 15%;
-  margin-left: 150px;
+  width: 5%;
+  margin-left: 600px;
   padding-top: 10px;
   border-bottom: 2px solid red;
 }
@@ -186,7 +167,7 @@ body {
 }
 
 .contributors {
-  margin-top: 20px;
+  margin-top: 80px;
 }
 
 .contributors h2 {
@@ -199,7 +180,7 @@ body {
   align-items: center;
   letter-spacing: -0.05em;
   color: #000;
-  padding-left: 120px;
+  padding-left: 200px;
 }
 
 .contributors-main {

@@ -1,0 +1,30 @@
+@media screen and (min-width: 768px) {
+  .header {
+    height: 35px;
+  }
+
+  body {
+    width: 100%;
+    background: none;
+  }
+
+  main {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    display: none;
+  }
+
+  .partners {
+    display: none;
+  }
+
+  .logo {
+    justify-content: center;
+    margin-top: 12px;
+    display: none;
+  }
+}

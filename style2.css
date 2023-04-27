@@ -8,7 +8,7 @@
 }
 
 .main-card2 {
-  margin-top: 20px;
+  margin-top: 10px;
   background-color: #ff5438;
   margin-left: 37px;
   margin-right: 37px;
@@ -20,13 +20,13 @@
   font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 28px;
   display: flex;
   align-items: center;
   letter-spacing: -0.01em;
   color: #fff;
-  padding-left: 50px;
+  padding-left: 30px;
   padding-top: 20px;
 }
 
@@ -175,7 +175,7 @@
 }
 
 .see-past {
-  margin-top: 70px;
+  margin-top: 120px;
   margin-left: 24px;
   margin-right: 24px;
 }

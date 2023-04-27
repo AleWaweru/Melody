@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,600;1,700;1,900&display=swap");
+
+@media screen and (max-width: 768px) {
+  .nav-btn {
+    display: none;
+  }
+
+  .menuList {
+    list-style: none;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+    background: #020a4d;
+    backdrop-filter: blur(8px);
+    mix-blend-mode: multiply;
+    transition: top 0.5s ease;
+    display: none;
+  }
+
+  .closeMenu {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: white;
+    margin: 15px;
+  }
+
+  .main-card3 {
+    display: none;
+  }
+
+  .contributors-img img {
+    width: 90px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .humburger {
+    display: none;
+  }
+
+  .navbar {
+    width: 100%;
+    margin-bottom: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menuList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  .navbar .menuList li a {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: #868686;
+  }
+
+  .closeMenu {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 70px;
+  }
+
+  .header {
+    height: 10px;
+  }
+
+  .nav-btn {
+    height: 35px;
+    padding: 10px 10px 10px 10px;
+    color: #ec4327;
+    border: 2px solid #ec4327;
+    margin-right: 80px;
+  }
+
+  .card {
+    display: flex;
+    width: 90%;
+    margin-right: 150px;
+    margin-left: 60px;
+  }
+
+  .main-card {
+    width: 70%;
+    flex-direction: column;
+  }
+
+  .main {
+    width: 100%;
+    height: 500px;
+  }
+
+  .card-image {
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+
+  .card-header {
+    margin-left: 30px;
+    margin-top: -10px;
+  }
+
+  .card-text {
+    margin-top: -15px;
+    margin-left: 30px;
+  }
+
+  .main-border {
+    align-items: center;
+    margin-left: 570px;
+  }
+
+  .main-card2 {
+    display: none;
+  }
+
+  .main-card3 h5 {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.01em;
+    text-decoration-line: underline;
+    color: #fff;
+  }
+
+  .contr-align {
+    display: flex;
+    width: 70%;
+    gap: 5rem;
+    margin-left: 160px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+  }
+
+  .contributors-main {
+    width: 70%;
+  }
+
+  .contributors h2 {
+    margin-left: 360px;
+  }
+
+  .contributors-btn {
+    display: none;
+  }
+
+  .underscore {
+    display: flex;
+  }
+
+  .partners-logo1 img {
+    gap: 10rem;
+    margin-right: 80px;
+  }
+
+  .partners-logo2 img {
+    gap: 10rem;
+    margin-right: 80px;
+  }
+
+  .footer-logo {
+    margin-left: 150px;
+  }
+
+  .footer-text {
+    margin-left: 50px;
+  }
+
+  .contributors-img img {
+    width: 120px;
+  }
+}
