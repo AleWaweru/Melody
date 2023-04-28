@@ -301,34 +301,3 @@ footer {
   letter-spacing: -0.01em;
   color: #3b3e45;
 }
-
-@media screen and (min-width: 768px) {
-  .partners1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 10px;
-    height: 216px;
-    background: #414246;
-  }
-
-  .partners1 h3 {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.01em;
-    color: #fff;
-  }
-
-  .partners-underscore {
-    border-bottom: 1px solid #ff5438;
-    width: 10%;
-    margin-top: 7px;
-    margin-bottom: 10px;
-  }
-}

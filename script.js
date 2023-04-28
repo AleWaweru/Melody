@@ -28,7 +28,7 @@ const Projects = [
   {
     id: 'Project1',
     id2: 'Project2',
-    Image: './images/passport1.jpg',
+    Image: './images/speaker_01.png',
     Image2: './images/speaker_4.png',
     Name: 'Alex Waweru',
     Name2: 'SohYeong Noh',
@@ -49,10 +49,11 @@ const Projects = [
     Description: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006',
     Description2: ' As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science technology, humanities, and the arts.',
   },
+
   {
     id: 'Project5',
     id2: 'Project6',
-    Image: './images/speaker_01.png',
+    Image: './images/speaker_06.png',
     Image2: './images/speaker_05.png',
     Name: 'Grigo Pips',
     Name2: 'Nor Heshi',
@@ -82,6 +83,7 @@ Projects.forEach((project) => {
       </p>
     </div>
   </div>
+
   <div class="contributors-main">
     <div class="contributors-img">
       <img src=${project.Image2} alt="cont-image" />
@@ -97,7 +99,31 @@ Projects.forEach((project) => {
       </p>
     </div>
   </div>
+  
+
 </div>`;
 
   cardSection.append(cardDiv);
+});
+
+const loadmore = document.querySelector('.contributors-btn1');
+
+let currentItems = 2;
+
+loadmore.addEventListener('click', (e) => {
+  const elementList = [...document.querySelectorAll('.contr-align')];
+
+  for (let i = currentItems; i < currentItems + 4; i += 1) {
+    setTimeout(() => {
+      e.target.classList.remove('show-loader');
+      if (elementList[i]) {
+        elementList[i].style.display = 'block';
+      }
+    });
+  }
+  currentItems += 2;
+
+  if (currentItems >= elementList.length) {
+    e.target.classList.add('loaded');
+  }
 });
