@@ -56,7 +56,11 @@
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="https://www.loom.com/share/4380828fc79644a494eeeae5ecf7d19f"></a>
+## 🚀 Live Demo <a name="Live Demo"></a>
+
+>This is a live demo linked for the project
+
+https://www.loom.com/share/4380828fc79644a494eeeae5ecf7d19f
 
 
 

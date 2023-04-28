@@ -206,8 +206,7 @@ for (let i = 5; i <= 5; i += 1) {
     </p>
   </div>`;
 
-  cardSection5.innerHTML += card;
-  
+  cardSection6.innerHTML += card;
 }
 
 // load more button to display speaker number 3,4,5 & 6
