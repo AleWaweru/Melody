@@ -1,5 +1,3 @@
-const cardSection = document.getElementById('melody-speakers');
-
 const mainMenu = document.querySelector('.menuList');
 const closeMenu = document.querySelector('.closeMenu');
 const openMenu = document.querySelector('.humburger');
@@ -27,103 +25,195 @@ const Projects = [
 
   {
     id: 'Project1',
-    id2: 'Project2',
     Image: './images/speaker_01.png',
-    Image2: './images/speaker_4.png',
     Name: 'Alex Waweru',
-    Name2: 'SohYeong Noh',
     Proffesion: 'Music Professor of Entrepreneurial Legal Studies at Harvard Law School',
-    Proffesion2: 'Director of Art Centre Nabi and a board member of CC Korea</span ',
     Description: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006',
-    Description2: ' As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science technology, humanities, and the arts.',
+  },
+  {
+    id: 'Project2',
+    Image: './images/speaker_4.png',
+    Name: 'SohYeong Noh',
+    Proffesion: 'Director of Art Centre Nabi and a board member of CC Korea</span ',
+    Description: ' As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science technology, humanities, and the arts.',
+
   },
   {
     id: 'Project3',
-    id2: 'Project4',
     Image: './images/speaker_02.png',
-    Image2: './images/speaker_001.png',
     Name: 'Brika Oseli',
-    Name2: 'Naom Muma',
     Proffesion: 'Music Professor of Entrepreneurial Legal Studies at Harvard Law School',
-    Proffesion2: 'Director of Art Centre Nabi and a board member of CC Korea</span ',
     Description: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006',
-    Description2: ' As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science technology, humanities, and the arts.',
+  },
+  {
+    id: 'Project4',
+    Image: './images/speaker_001.png',
+    Name: 'Naom Muma',
+    Proffesion: 'Director of Art Centre Nabi and a board member of CC Korea</span ',
+    Description: ' As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science technology, humanities, and the arts.',
+
   },
 
   {
     id: 'Project5',
-    id2: 'Project6',
     Image: './images/speaker_06.png',
-    Image2: './images/speaker_05.png',
     Name: 'Grigo Pips',
-    Name2: 'Nor Heshi',
     Proffesion: 'Music Professor of Entrepreneurial Legal Studies at Harvard Law School',
-    Proffesion2: 'Director of Art Centre Nabi and a board member of CC Korea</span ',
     Description: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006',
-    Description2: ' As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science technology, humanities, and the arts.',
+  },
+  {
+    id: 'Project6',
+    Image: './images/speaker_05.png',
+    Name: 'Nor Heshi',
+    Proffesion: 'Director of Art Centre Nabi and a board member of CC Korea</span ',
+    Description: ' As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science technology, humanities, and the arts.',
+
   },
 
 ];
 
-Projects.forEach((project) => {
-  const cardDiv = document.createElement('div');
-  cardDiv.innerHTML = `<div class="contr-align">
-  <div class="contributors-main">
-    <div class="contributors-img">
-      <img src=${project.Image} alt="cont-image" />
-    </div>
-    <div class="contributors-content">
-      <h3>${project.Name}</h3>
-      <span
-        >${project.Proffesion}</span
-      >
-      <div class="contributor-border"></div>
-      <p>
-        ${project.Description}
-      </p>
-    </div>
+//    first speaker
+const cardSection1 = document.getElementById('melody-speakers');
+
+for (let i = 0; i <= 0; i += 1) {
+  const card = ` <div class="contributors-main">
+  <div class="contributors-img" id="speaker-1">
+    <img src="${Projects[i].Image}" alt="cont-image" />
   </div>
+  <div class="contributors-content">
+    <h3>${Projects[i].Name}</h3>
+    <span
+      >${Projects[i].Proffesion}</span
+    >
+    <div class="contributor-border"></div>
+    <p>
+      ${Projects[i].Description}
+    </p>
+  </div>`;
 
-  <div class="contributors-main">
-    <div class="contributors-img">
-      <img src=${project.Image2} alt="cont-image" />
-    </div>
-    <div class="contributors-content">
-      <h3>${project.Name2}</h3>
-      <span
-        >${project.Proffesion2}</span
-      >
-      <div class="contributor-border"></div>
-      <p>
-      ${project.Description2}
-      </p>
-    </div>
+  cardSection1.innerHTML += card;
+}
+
+// second speaker
+
+const cardSection2 = document.getElementById('melody-speakers');
+
+for (let i = 1; i <= 1; i += 1) {
+  const card = ` <div class="contributors-main" id = "speaker-2">
+  <div class="contributors-img">
+    <img src="${Projects[i].Image}" alt="cont-image" />
   </div>
-  
+  <div class="contributors-content">
+    <h3>${Projects[i].Name}</h3>
+    <span
+      >${Projects[i].Proffesion}</span
+    >
+    <div class="contributor-border"></div>
+    <p>
+      ${Projects[i].Description}
+    </p>
+  </div>`;
 
-</div>`;
+  cardSection2.innerHTML += card;
+}
 
-  cardSection.append(cardDiv);
-});
+// third speaker
 
-const loadmore = document.querySelector('.contributors-btn1');
+const cardSection3 = document.getElementById('melody-speakers');
 
-let currentItems = 2;
+for (let i = 2; i <= 2; i += 1) {
+  const card = ` <div class="contributors-main" id = "speaker-3">
+  <div class="contributors-img">
+    <img src="${Projects[i].Image}" alt="cont-image" />
+  </div>
+  <div class="contributors-content">
+    <h3>${Projects[i].Name}</h3>
+    <span
+      >${Projects[i].Proffesion}</span
+    >
+    <div class="contributor-border"></div>
+    <p>
+      ${Projects[i].Description}
+    </p>
+  </div>`;
 
-loadmore.addEventListener('click', (e) => {
-  const elementList = [...document.querySelectorAll('.contr-align')];
+  cardSection3.innerHTML += card;
+}
 
-  for (let i = currentItems; i < currentItems + 4; i += 1) {
-    setTimeout(() => {
-      e.target.classList.remove('show-loader');
-      if (elementList[i]) {
-        elementList[i].style.display = 'block';
-      }
-    });
-  }
-  currentItems += 2;
+// fourth speaker
 
-  if (currentItems >= elementList.length) {
-    e.target.classList.add('loaded');
-  }
-});
+const cardSection4 = document.getElementById('melody-speakers');
+
+for (let i = 3; i <= 3; i += 1) {
+  const card = ` <div class="contributors-main" id = "speaker-4">
+  <div class="contributors-img">
+    <img src="${Projects[i].Image}" alt="cont-image" />
+  </div>
+  <div class="contributors-content">
+    <h3>${Projects[i].Name}</h3>
+    <span
+      >${Projects[i].Proffesion}</span
+    >
+    <div class="contributor-border"></div>
+    <p>
+      ${Projects[i].Description}
+    </p>
+  </div>`;
+
+  cardSection4.innerHTML += card;
+}
+
+// fifth speaker
+
+const cardSection5 = document.getElementById('melody-speakers');
+
+for (let i = 4; i <= 4; i += 1) {
+  const card = ` <div class="contributors-main" id = "speaker-5">
+  <div class="contributors-img">
+    <img src="${Projects[i].Image}" alt="cont-image" />
+  </div>
+  <div class="contributors-content">
+    <h3>${Projects[i].Name}</h3>
+    <span
+      >${Projects[i].Proffesion}</span
+    >
+    <div class="contributor-border"></div>
+    <p>
+      ${Projects[i].Description}
+    </p>
+  </div>`;
+
+  cardSection5.innerHTML += card;
+}
+
+// sixth speaker
+
+const cardSection6 = document.getElementById('melody-speakers');
+
+for (let i = 5; i <= 5; i += 1) {
+  const card = ` <div class="contributors-main" id = "speaker-6">
+  <div class="contributors-img">
+    <img src="${Projects[i].Image}" alt="cont-image" />
+  </div>
+  <div class="contributors-content">
+    <h3>${Projects[i].Name}</h3>
+    <span
+      >${Projects[i].Proffesion}</span
+    >
+    <div class="contributor-border"></div>
+    <p>
+      ${Projects[i].Description}
+    </p>
+  </div>`;
+
+  cardSection6.innerHTML += card;
+}
+
+const moreBtn = () => {
+  document.getElementById('speaker-3').style.display = 'flex';
+  document.getElementById('speaker-4').style.display = 'flex';
+  document.getElementById('speaker-5').style.display = 'flex';
+  document.getElementById('speaker-6').style.display = 'flex';
+};
+
+document.querySelector('.contributors-btn1').addEventListener('click', moreBtn);

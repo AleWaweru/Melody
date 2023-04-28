@@ -227,3 +227,51 @@
     filter: blur(0.8px);
   }
 }
+
+@media screen and (max-width: 768px) {
+  #speaker-3,
+  #speaker-4,
+  #speaker-5,
+  #speaker-6 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contributors-main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  #melody-speakers {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    margin-bottom: 77px;
+    margin-left: 181px;
+    margin-right: 172px;
+  }
+
+  #speaker-1 {
+    width: 80%;
+  }
+
+  #speaker-2 {
+    width: 70%;
+  }
+
+  #speaker-3,
+  #speaker-4,
+  #speaker-5,
+  #speaker-6 {
+    display: flex !important;
+    justify-content: center;
+    width: 70%;
+  }
+
+  .speaker-contri h2 {
+    margin-left: 550px;
+    margin-top: 40px;
+  }
+}
