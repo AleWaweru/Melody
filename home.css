@@ -187,10 +187,12 @@
   .footer-text span {
     width: 50px;
   }
+
   .menuList .active a {
     background-color: #f07f7e;
     height: 20px;
   }
+
   .navbar .menuList li a:hover {
     color: #ec4327;
   }
