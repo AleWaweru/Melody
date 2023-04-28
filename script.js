@@ -108,7 +108,7 @@ Projects.forEach((project) => {
 
 const loadmore = document.querySelector('.contributors-btn1');
 
-let currentItems = 2;
+let currentItems = 0;
 
 loadmore.addEventListener('click', (e) => {
   const elementList = [...document.querySelectorAll('.contr-align')];
