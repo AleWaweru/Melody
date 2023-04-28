@@ -206,8 +206,11 @@ for (let i = 5; i <= 5; i += 1) {
     </p>
   </div>`;
 
-  cardSection6.innerHTML += card;
+  cardSection5.innerHTML += card;
+  
 }
+
+// load more button to display speaker number 3,4,5 & 6
 
 const moreBtn = () => {
   document.getElementById('speaker-3').style.display = 'flex';
@@ -215,5 +218,4 @@ const moreBtn = () => {
   document.getElementById('speaker-5').style.display = 'flex';
   document.getElementById('speaker-6').style.display = 'flex';
 };
-
 document.querySelector('.contributors-btn1').addEventListener('click', moreBtn);
