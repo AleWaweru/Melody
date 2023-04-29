@@ -106,11 +106,6 @@
     margin-left: 60px;
   }
 
-  .main-card {
-    width: 70%;
-    flex-direction: column;
-  }
-
   .card-image {
     margin-left: 50px;
     margin-top: 10px;

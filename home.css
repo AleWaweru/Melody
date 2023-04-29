@@ -77,11 +77,6 @@
     margin-right: 200px;
   }
 
-  .intro-text1 {
-    width: 60%;
-    margin-left: 240px;
-  }
-
   .intro-text2 {
     width: 60%;
     margin-left: 240px;
@@ -197,17 +192,6 @@
     color: #ec4327;
   }
 
-  .intro {
-    margin-left: 16px;
-    margin-right: 12px;
-    margin-top: 60px;
-    padding-top: 50px;
-    height: 50%;
-  }
-
-  .intro img {
-    margin-left: 220px;
-  }
 
   .main {
     height: 500px;
@@ -217,10 +201,6 @@
     mix-blend-mode: multiply;
   }
 
-  .card :hover {
-    cursor: pointer;
-    border: 1px solid white;
-  }
 
   .contributors-img img {
     background-color: white;
@@ -274,4 +254,86 @@
     margin-left: 550px;
     margin-top: 40px;
   }
+}
+
+.main{
+  height: 630px;
+}
+
+.speaker-contri h2 {
+margin-left: 100px;
+margin-top: 40px;
+}
+@media screen and (max-width: 768px) {
+.main-card {
+display: flex;
+margin-top: 15px;
+background-color: #747577;
+opacity: 0.8 ;
+border-radius: 2px;
+gap: 1.5rem;
+margin-left: 5px;
+margin-right: 5px;
+height: 80%;
+}
+
+}
+
+@media screen and (min-width: 768px) {
+.intro {
+margin-left: 16px;
+margin-right: 12px;
+margin-top: 80px;
+padding-top: 50px;
+height: 50%;
+margin-bottom: 80px;
+}
+.speaker-contri h2 {
+margin-left: 550px;
+margin-top: 40px;
+}
+
+.intro img {
+margin-left: 220px;
+width: 85%;
+margin-top: 40px;
+margin-bottom: 20px;
+}
+
+.intro-text1 {
+width: 45%;
+margin-left: 240px;
+margin-top: 120px;
+}
+.container{
+height: 600px;
+}
+.main-card {
+flex-direction: column;
+opacity: 0.7;
+border-radius: 2px;
+margin-left: 2px;
+margin-right: 2px;
+margin-top: 40px;
+background-color: #747577;
+height: 80%;
+
+}
+.card-text p{
+color: white;
+}
+
+.card :hover {
+cursor: pointer;
+border: 2px solid white;
+}
+.see-card-btn{
+background: none;
+border: none;
+cursor: pointer;
+}
+.see-card-btn h4{
+background: transparent;
+}
+
 }

@@ -127,16 +127,6 @@ body {
   border-bottom: 2px solid red;
 }
 
-.main-card {
-  display: flex;
-  gap: 2rem;
-  margin-top: 30px;
-  background-color: #747577;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-radius: 12px;
-}
-
 .card-header h3 {
   font-family: 'Lato', sans-serif;
   font-style: normal;
